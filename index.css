@@ -1,0 +1,38 @@
+
+.half {
+    min-height: 50vh;
+
+}
+.full {
+    min-height: 100vh;
+}
+body {
+    display : grid;
+    
+}
+
+@media (width > 600px) {
+    .half {
+    min-height: initial;
+    grid-column: 1/4;
+
+}
+.full {
+    min-height: initial;
+ 
+    }
+    body {
+   
+    margin: 0%;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    
+}
+
+main {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+}
